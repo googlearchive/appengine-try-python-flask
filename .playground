@@ -1,0 +1,12 @@
+{
+  "template_name": "Try Google App Engine for Python, Flask",
+  "template_description": "Starter code for a Google App Engine app in Python using the Flask framework.",
+  "show_files": [
+    "main.py",
+    "app.yaml",
+    "appengine_config.py"
+  ],
+  "read_only_files": [
+    "app.yaml"
+  ]
+}
