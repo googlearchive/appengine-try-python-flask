@@ -1,5 +1,5 @@
 {
-  "project_name": "Try Google App Engine for Python, Flask",
+  "project_name": "Hello World, Python with Flask",
   "project_description": "Starter code for a Google App Engine app in Python using the Flask framework.",
   "show_files": [
     "main.py",
