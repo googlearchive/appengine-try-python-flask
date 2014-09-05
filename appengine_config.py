@@ -9,6 +9,8 @@ import sys
 # Because addsitedir() appends the directory, added packages might be
 # ignored in favor of bundled versions earlier in the set of paths, so
 # we force lib/ to the start of the list.
+# this ends up being equivalent to sys.path.insert(1, 'lib') with
+# proper .pth processing for namespace packages.
 
 # break up the sys.path
 sys.path, remainder = sys.path[:1], sys.path[1:]
