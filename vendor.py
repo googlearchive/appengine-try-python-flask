@@ -34,18 +34,20 @@ def insertsitedir(directory, index=1):
     # to sys.path (which was truncated by the last step.)
     site.addsitedir(directory)
 
-    # Finally, we'll add the paths we removed back.
+    # Finally, we'll add the paths we removed back, resulting in
+    # ['.', '/vendor', '/site-packages/x', 'site-packages/y']
     sys.path.extend(remainder)
 
 
-def insertvenv(path, index=1):
+def insertvenv(directory, index=1):
     """
     Adds the given virtualenv's site-packages to the python path.
 
     Args:
-    path: Path to a root of the virtualenv, relative to ``os.getcwd()``
+    directory: Path to the root directory of the virtualenv, relative
+    to the current working directory.
     index: passed through to insertsitedir().
     """
-    site_dir = os.path.join(path, 'lib', 'python' + sys.version[:3],
+    site_dir = os.path.join(directory, 'lib', 'python' + sys.version[:3],
                             'site-packages')
     insertsitedir(site_dir, index=index)
