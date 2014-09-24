@@ -41,7 +41,7 @@ def insertsitedir(directory, index=1):
 
 def insertvenv(directory, index=1):
     """
-    Adds the given virtualenv's site-packages to the python path.
+    Adds the given virtualenv's site-packages directory to the python path.
 
     Args:
     directory: Path to the root directory of the virtualenv, relative
