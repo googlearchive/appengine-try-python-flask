@@ -1,3 +1,11 @@
+"""
+Helpers for adding dependencies to the import path.
+
+Usage:
+    from vendor import insertsitedir
+    insertsitedir('lib')
+"""
+
 import os
 import site
 import sys
