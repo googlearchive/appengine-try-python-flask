@@ -14,15 +14,17 @@
 # limitations under the License.
 #
 
-# Imported from:
-# https://github.com/jonparrott/Darth-Vendor/
+# Notes:
+# - Imported from https://github.com/jonparrott/Darth-Vendor/
+# - Renamed `darth.vendor` to `vendor.add` to match upcoming SDK interface.
+# - Renamed `position` param to `index` to match upcoming SDK interface.
 
 import site
 import os.path
 import sys
 
 
-def add(folder, position=1):
+def add(folder, index=1):
   """
   Adds the given folder to the python path. Supports namespaced packages.
   By default, packages in the given folder take precedence over site-packages
