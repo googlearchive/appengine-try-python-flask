@@ -19,28 +19,7 @@
 # - Added license header.
 # - Renamed `darth.vendor` to `vendor.add` to match upcoming SDK interface.
 # - Renamed `position` param to `index` to match upcoming SDK interface.
-
-"""
-Helpers for adding dependencies to the import path.
-
-Darth Vendor is so named because of the evil, evil things we've done
-for all the right reasons. Forgive us.
-
-           _.-'~~~~~~`-._
-          /      ||      \
-         /       ||       \
-        |        ||        |
-        | _______||_______ |
-        |/ ----- \/ ----- \|
-       /  (     )  (     )  \
-      / \  ----- () -----  / \
-     /   \      /||\      /   \
-    /     \    /||||\    /     \
-   /       \  /||||||\  /       \
-  /_        \o========o/        _\
-    `--...__|`-._  _.-'|__...--'
-            |    `'    |
-"""
+# - Removed funny arworks docstring.
 
 import site
 import os.path
